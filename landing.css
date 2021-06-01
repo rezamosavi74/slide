@@ -1,0 +1,432 @@
+body {
+    font-family: 'Be Vietnam', sans-serif !important;
+}
+
+.jj {
+    display: none;
+    background-color: white;
+    text-align: center;
+}
+
+
+
+header {
+    position: relative;
+}
+
+header::before {
+    content: '';
+    background-image: url(bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: 135%;
+    height: 100%;
+    width: 85%;
+    z-index: -1;
+    position: absolute;
+    top: -120px;
+    right: 0;
+}
+
+nav {
+    padding-top: 30px !important;
+}
+
+nav ul a {
+    color: black !important;
+    
+}
+
+nav>button {
+    width: auto !important;
+}
+
+.pic img {
+    width: 100%;
+}
+
+.intro {
+    padding: 30px 0 100px;
+}
+
+h1, h2 {
+    font-weight: 700 !important;
+}
+
+p, small {
+    color: hsl(227, 12%, 61%);
+}
+
+.text::before {
+    content: '';
+    background-image: url(bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    height: 150%;
+    width: 40%;
+    z-index: -1;
+    position: absolute;
+    right: 0;
+    
+}
+
+.text, .different {
+    text-align: center !important;
+}
+
+.different {
+    padding-bottom: 50px;
+}
+
+.sec {
+    padding: 30px 0;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    color: white;
+    background-color: hsl(12, 88%, 59%);
+    border: none !important;
+    cursor: pointer;
+    border-radius: 100px !important;
+    outline: none !important;
+    z-index: 2;
+}
+
+h4 {
+    background-color: hsl(13, 100%, 96%);
+    border-radius: 100px 0 0 100px;
+    margin: 0 !important;
+    padding: .25em 0 .25em 3em;
+    width: 100%;
+}
+
+.badge {
+    background-color: hsl(12, 88%, 59%);
+    color: white;
+    font-size: 1.5rem !important;
+    border-radius: 100px !important;
+    line-height: 1.2 !important;
+    width: 70px;
+    position: absolute;
+    height: -webkit-fill-available;
+}
+
+.tit {
+    display: flex;
+    position: relative;
+}
+
+.explain p {
+    padding-top: 15px;
+}
+
+/**** style of slide show ===>****/
+
+.slide {
+    text-align: center;
+    padding: 100px 0 50px;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    padding: 100px 0 0;
+}
+
+.mySlides {
+    display: none;
+    text-align: center;
+    height: 300px;
+    background-color: hsl(0, 0%, 98%);
+    padding: 80px 20px 30px;
+    position: relative;
+    
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    border :1px solid hsl(12, 88%, 59%);
+    transition: background-color 0.6s ease;
+
+}
+
+.active, .dot:hover {
+    background-color: hsl(12, 88%, 59%);
+}
+
+.fade {
+    opacity: 1 !important;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 10s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+
+
+.anisha::before, .ali::before, .rich::before, .shan::before {
+    content: url(avatar-anisha.png);
+    position: absolute;
+    top: -80px;
+    left: 35%;
+}
+
+.ali::before {
+    content: url(avatar-ali.png);
+}
+
+.rich::before {
+    content: url(avatar-richard.png);
+}
+
+.shan::before {
+    content: url(avatar-shanai.png);
+}
+
+.slide button, .simplify button {
+    margin-top: 50px;
+}
+
+.simplify {
+    text-align: center;
+    background-image: url(bg-simplify-section-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(12, 88%, 59%);
+    padding: 100px 50px;
+    color: white;
+}
+
+.simplify button {
+    background-color: white;
+    color: hsl(12, 88%, 59%);
+}
+
+footer {
+    text-align: center;
+    padding: 50px 0 20px ;
+    background-color: hsl(233, 12%, 13%);
+    color: white;
+}
+
+footer input {
+    height: 50px;
+    width: 70%;
+    padding: 20px;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+}
+
+footer button {
+    width: 20%;
+}
+
+footer a {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 5%;
+}
+
+.list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list li {
+    padding: 10px 0;
+}
+
+.ilog {
+    padding-bottom: 50px;
+}
+
+.icon {
+    padding-bottom: 30px;
+}
+
+i {
+    cursor: pointer;
+    padding: 10px;
+}
+
+button:hover, nav ul a:hover {
+    opacity: .8;
+}
+
+.list ul a:hover, i:hover {
+    color: hsl(12, 88%, 59%) !important;
+}
+
+@media screen and (min-width:600px) {
+
+    .jj {
+        display: block;
+        background-color: unset;
+    }
+
+    header::before {
+        background-size: 115%;
+        height: 170%;
+        width: 38%;
+        top: -220px;
+        right: 0;
+    }
+
+    .container, .simplify {
+        display: flex;
+    }
+
+    .pic {
+        order: 2;
+    }
+
+    .text::before {
+        content: none;
+    }
+
+    .text, .different {
+        text-align: left !important;
+    }
+
+    .different::before {
+        content: '';
+        background-image: url(bg-tablet-pattern.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 100%;
+        width: 60%;
+        z-index: -1;
+        position: absolute;
+        left: -600px;
+        bottom: -200px;
+    }
+
+    h4 {
+        background-color: white;
+        padding-left: 4em;
+    }
+
+    .explain p {
+        padding-left: 6em;
+    }
+
+    .anisha::before, .ali::before, .rich::before, .shan::before {
+        left: 42.5%;
+    }
+
+    .simplify {
+        background-image: none;
+        position: relative;
+        justify-content: space-around;
+        padding: 100px 0;
+    }
+
+    .simplify::before {
+        content: '';
+        background-image: url(bg-simplify-section-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 85%;
+        height: 145%;
+        position: absolute;
+        right: 0;
+        top: -113px;
+
+    }
+
+    .simplify button {
+        margin: 0;
+    }
+
+    .foot {
+        justify-content: space-around;
+    }
+
+    .forminp {
+        order: 3;
+    }
+
+    .list {
+        
+        order: 2;
+        padding: 0;
+    }
+
+    .list ul {
+        padding: 0 50px;
+    }
+
+    .ilog {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 0;
+    }
+
+    .icon {
+        order: 2;
+        padding: 0;
+    }
+
+    .fstli {
+        padding-top: 0 !important;
+    }
+
+    .ilog .logo {
+        text-align: left;
+    }
+
+
+}
